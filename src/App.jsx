@@ -1,40 +1,54 @@
 import "./App.css";
+import WidthContainer from "./assets/components/WidthContainer";
+import SectionHeader from "./assets/components/SectionHeader";
+import Section from "./assets/components/Section";
+import Break from "./assets/components/Break";
+
+// ORANGE = FF700 / orange-400
+// CREAM = F7EAC9 / orange-50
+// BLUE = 00AFB5 /
 
 function App() {
   return (
-    <>
-      <header>
-        <p>Jo Webb</p>
-        <ul>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contact</li>
-        </ul>
+    <div className="bg-orange-50">
+      <header className="bg-orange-400 text-orange-50">
+        <WidthContainer>
+          <div className="flex justify-between py-4">
+            <p>Jo Webb</p>
+            <ul className="flex gap-2">
+              <li>About</li>
+              <li>Projects</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </WidthContainer>
       </header>
-      <section>
+      <Section>
         <div>Image</div>
         <div>
-          <h1>
+          <h1 className="text-xl font-normal my-2">
             Hey there! I'm Jo - a full-stack developer based in the south of
             England.
           </h1>
-          <p>
+          <p className="my-2">
             I enjoy building robust and feature-rich web applications that are
             both functional and intuitive to use.
           </p>
-          <p>
+          <p className="my-2">
             I began my web dev journey in late 2024 through the Odin Project,
             after becoming interested in building my own apps. I quickly became
             hooked - watching an idea develop into a real, working product is
             incredibly rewarding.
           </p>
-          <p>
+          <p className="my-2">
             Outside of coding, I'm into working out, cooking, spending time with
-            friends, and pursuing my latest passion project!
+            friends, or pursuing my latest passion project!
           </p>
         </div>
-      </section>
-      <section>
+      </Section>
+      <Break />
+      <Section>
+        <SectionHeader>Tech Stacks</SectionHeader>
         <div>
           <div>Frontend</div>
           <ul>
@@ -51,9 +65,10 @@ function App() {
             <li>PostgreSQL</li>
           </ul>
         </div>
-      </section>
-      <section>
-        <h2>Featured Projects</h2>
+      </Section>
+      <Break />
+      <Section>
+        <SectionHeader>Featured Projects</SectionHeader>
         <div>
           <div>
             <div>Image</div>
@@ -63,9 +78,10 @@ function App() {
             <a href="#">Live Project</a>
           </div>
         </div>
-      </section>
-      <section>
-        <h2>Contact</h2>
+      </Section>
+      <Break />
+      <Section>
+        <SectionHeader>Contact</SectionHeader>
         <div>
           <p>You can find me on my socials...</p>
           <ul>
@@ -78,8 +94,8 @@ function App() {
           <p>...Or feel free to message me through this form!</p>
           <div>FORM</div>
         </div>
-      </section>
-    </>
+      </Section>
+    </div>
   );
 }
 
