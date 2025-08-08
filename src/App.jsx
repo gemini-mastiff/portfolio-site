@@ -1,8 +1,10 @@
 import "./App.css";
-import WidthContainer from "./assets/components/WidthContainer";
-import SectionHeader from "./assets/components/SectionHeader";
-import Section from "./assets/components/Section";
-import Break from "./assets/components/Break";
+import WidthContainer from "./components/WidthContainer";
+import SectionHeader from "./components/SectionHeader";
+import Section from "./components/Section";
+import Break from "./components/Break";
+
+import ProfileImg from "./assets/pic-01.jpg"
 
 // BF - bg-stone-50
 
@@ -22,7 +24,7 @@ function App() {
         </WidthContainer>
       </header>
       <Section>
-        <div>Image</div>
+        <div><img src={ProfileImg} alt=""/></div>
         <div>
           <h1 className="text-xl my-2">
             Hey there! I'm Jo - a full-stack developer based in the south of
