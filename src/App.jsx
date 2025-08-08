@@ -4,14 +4,12 @@ import SectionHeader from "./assets/components/SectionHeader";
 import Section from "./assets/components/Section";
 import Break from "./assets/components/Break";
 
-// ORANGE = FF700 / orange-400
-// CREAM = F7EAC9 / orange-50
-// BLUE = 00AFB5 /
+// BF - bg-stone-50
 
 function App() {
   return (
-    <div className="bg-orange-50">
-      <header className="bg-orange-400 text-orange-50">
+    <div className="bg-stone-50 font-inter">
+      <header className="bg-amber-500 text-stone-">
         <WidthContainer>
           <div className="flex justify-between py-4">
             <p>Jo Webb</p>
@@ -26,7 +24,7 @@ function App() {
       <Section>
         <div>Image</div>
         <div>
-          <h1 className="text-xl font-normal my-2">
+          <h1 className="text-xl my-2">
             Hey there! I'm Jo - a full-stack developer based in the south of
             England.
           </h1>
