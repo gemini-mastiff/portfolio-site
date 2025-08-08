@@ -9,7 +9,7 @@ import Break from "./assets/components/Break";
 function App() {
   return (
     <div className="bg-stone-50 font-inter">
-      <header className="bg-amber-500 text-stone-">
+      <header className="bg-amber-500 text-stone-50">
         <WidthContainer>
           <div className="flex justify-between py-4">
             <p>Jo Webb</p>
