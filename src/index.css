@@ -1,1 +1,7 @@
+@import url(https://fonts.bunny.net/css?family=inter:400,500,600|poppins:400,600,700);
 @import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter", "sans-serif";
+  --font-poppins: "Poppins", "sans-serif";
+}
