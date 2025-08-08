@@ -1,3 +1,7 @@
 export default function SectionHeader({ children }) {
-  return <h2 className="mb-2 text-xl ">{children}</h2>;
+  return (
+    <h2 className="font-poppins mb-2 text-xl font-semibold text-amber-500">
+      {children}
+    </h2>
+  );
 }
